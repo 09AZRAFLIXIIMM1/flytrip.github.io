@@ -1,0 +1,154 @@
+   html{    
+        font-family: "Arial";
+	    background-color:black;
+	    margin:0;
+		color: white;
+    }
+    body{
+        margin:0;
+        font-family: "Helvetica";
+    }
+    
+ .header {
+	  background-color: #020261;
+	  color: white;
+	  height: 90px;
+}
+
+.header li:hover {
+	  transition: 0.8s;
+	  background-color: black; 
+	  color: white;
+	  cursor: pointer;
+	  
+}
+
+.header-list ul {
+	
+     display: flex;
+	 align-items: center;
+	 justify-content: center;
+	
+}
+
+.header-list li {
+	  
+	  list-style: none;
+	  float: left;
+	  padding: 33px 20px;
+	  padding : 20px 40px;
+      margin-left: 10px ;
+      margin-top:10px;
+      background-color: white;
+	  color: #020261;
+}
+
+    a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+    * {
+    box-sizing: border-box;
+  }
+  
+  .kolom {
+    margin-top: 5%;
+     height: 500px;
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+  }
+  
+  .harga {
+    list-style-type: none;
+    border: 0px solid #eee;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+  }
+  
+
+  
+  .harga .subhead {
+    background-color: white;
+    color: black;
+    font-size: 25px;
+  }
+  
+  .harga li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .harga .grey {
+    background-color: black;
+	color: white;
+    font-size: 20px;
+  }
+  
+  button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  button:hover{
+    transition: 0.5s;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .spasi{
+    height: 80px;
+  }
+  
+  .contact-form {
+	  margin-top: 60px;
+  }
+  
+  table {
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 69px;
+	margin-top: 566px;
+}
+
+.reset button {
+    background-color: rgb(255, 0, 0);
+}
+
+.reset button:hover {
+    background-color: white;
+}
+
+ .footer {
+	  background-color: #020261;
+	  height: 125px;
+	  color: white;
+	  padding: 40px;
+	  margin-top: 200px:
+}
+
+.footer-logo img{
+      float: left;
+	  width: 100px;
+	  height: 40px;	  
+	  margin-left: 20px;
+
+}
+
+.footer-list {
+      float: right;
+}
+
+.footer-list li { 
+      padding-bottom: 10px;
+}

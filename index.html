@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <meta charset="utf-8">
+     <title>Web Penilaian PKK</title>
+     <link rel="stylesheet" href="stylezahra.css">
+ </head>
+ 		  		  
+ <div class="header">
+ 	  
+	  <div class="header-logo">
+		  <img src="https://drive.google.com/uc?export=view&id=1hI7rNDpdAH8aQGqj5Y7ruWALklOtjYU8"></a>
+		  </div>
+		  
+         <div class="header-list">
+			 <ul>
+				  <li> <a href ="index.html"> Beranda </li> </a>
+				  <li> <a href ="indexkontak.html"> Kontak </li> </a>
+				  <li> <a href ="product.html"> Produk </li> </a>
+				  <li> <a href ="product.html"> Pesan </li> </a>
+			 </ul>
+         </div>
+    </div>
+
+ <div class="main">'
+ 
+ <div class="first-wrap">
+  <div class="first-div">
+    
+    <div class="first-inner-div">
+	
+      <a href="#anchor">
+        <span class="glyphicon glyphicon-circle-arrow-down down-arrow"></span>
+      </a>      
+    </div>
+  </div>
+</div>
+
+<div class="second-wrap">
+  <div class="second-div" id="anchor">
+    <p class="body-text">
+      <span class="line-separator"></span> 
+    </p>
+  </div>
+  <div class="third-div">
+  </div>
+</div>
+
+<div class="third-wrap">
+  <div class="fourth-div">
+    <p class="body-text">
+      <span class="line-separator"></span> 
+      <span class="line-separator"></span>
+    </p>
+  </div>
+  <div class="fifth-div">
+  </div>
+</div>
+
+<a href="#" id="back-to-top" title="Back to top">&uarr;</a>
+        
+	<div class="contents1">			 
+		<h2>Tour Guide</h2>
+		<p>Menyediakan layanan pemandu wisata seluruh wilayah penjuru Purwokerto, tersedia beragam paket wisata, mulai dari paket solo (sendiri), couple (pasangan), Friends (teman-teman), dan family (keluarga), juga menyediakan berbagai kamera Dslr / Mirorrless / Action cam bagi yang ingin mengabadikan momen saat liburan, juga menyediakan jasa foto/album untuk personal, paket keluarga dan juga prewedding. </p>
+		<h2>Aktivitas Outdoor</h2>
+		<p>Menyediakan perlengkapan outdoor/camping bagi yang ingin sekedar menyewa atau bisa juga membeli, menyediakan layanan rekomendasi tempat camping atau sekedar menghabiskan waktu di alam</p>
+     </div>
+	 
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 700);
+        return false;
+      }
+    }
+  });
+});
+
+if ($('#back-to-top').length) {
+  var scrollTrigger = 100, // px
+    backToTop = function() {
+      var scrollTop = $(window).scrollTop();
+      if (scrollTop > scrollTrigger) {
+        $('#back-to-top').addClass('show');
+      } else {
+        $('#back-to-top').removeClass('show');
+      }
+    };
+  backToTop();
+  $(window).on('scroll', function() {
+    backToTop();
+  });
+  $('#back-to-top').on('click', function(e) {
+    e.preventDefault();
+    $('html,body').animate({
+      scrollTop: 0
+    }, 700);
+  });
+}
+</script>
+
+</body>
+</html>

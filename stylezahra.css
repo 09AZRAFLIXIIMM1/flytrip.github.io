@@ -1,0 +1,224 @@
+body {
+      font-family: "Arial";
+	  background-color:black;
+	  margin:0;
+	  border-left: 250px solid #cccccc;
+}
+
+li {
+	  list-style: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.line-separator {
+  display: block;
+  width: 50%;
+  height: 1px;
+  text-align: center;
+  margin: 20px auto;
+  border-bottom: 1px solid grey;
+}
+
+.first-wrap {
+  height: 100%;
+  width: 100vw;
+  background: #ffffff url("https://images.unsplash.com/photo-1571967260643-8c677cf925df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80") no-repeat fixed;
+   background-size: cover;
+   background-position: 50% 50%;
+}
+
+.second-wrap {
+  height: 100%;
+  width: 100vw;
+  background: #ffffff url("https://images.unsplash.com/photo-1578469550956-0e16b69c6a3d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1106&q=80") no-repeat fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.third-wrap {
+  height: 100%;
+  width: 100vw;
+  background: #ffffff url("https://images.unsplash.com/photo-1607427225127-a4ae1d4b050c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80") no-repeat fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.first-div {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: transparent;
+  .first-inner-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    .down-arrow {
+      font-size: 40px;
+      color: #fff;
+    }
+    p {
+      padding: 20px;
+      letter-spacing: 0.45em;
+      text-transform: uppercase;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+.second-div {
+  display: table;
+  height: 50vh;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.3);
+  p {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 0.45em;
+    text-transform: uppercase;
+  }
+}
+
+.third-div {
+  display: table;
+  height: 50vh;
+  width: 100vw;
+  background-color: transparent;
+}
+
+.fourth-div {
+  display: table;
+  height: 50vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  p {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 0.45em;
+    text-transform: uppercase;
+  }
+}
+
+.fifth-div {
+  display: table;
+  height: 50vh;
+  width: 100vw;
+  background-color: transparent;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 9999;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 30px;
+  background-color: rgb(255, 255, 255);
+  color: #000;
+  cursor: pointer;
+  border: 0;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: opacity 0.2s ease-out;
+  opacity: 0;
+}
+
+.back-to-top:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+}
+
+.back-to-top.show {
+  opacity: 1;
+}
+
+.copy-container {
+      color: white;	
+}
+
+.header {
+	  margin-top: -30px; 
+	  background-color: #020261;
+	  color: white;
+	  
+	  top: 0;
+		left: 0;
+		width: 250px;
+		position: absolute;
+}
+
+.header li:hover {
+	  transition: 0.8s;
+	  background-color: black; 
+	  color: white;
+	  cursor: pointer;
+	  
+}
+
+.header-list ul {
+	
+	margin-top:200px;
+	top: 0;
+		left: 0;
+		width: 200px;
+		position: absolute;
+}
+
+.header-list li {
+	  
+	  text-align:center;
+	  padding-top: 33px ;
+	  padding-bottom:33px;
+	  
+	
+      margin-left: -30px ;
+      margin-top:10px;
+      background-color: white;
+	  color: #020261;
+}
+
+.header-logo img{
+    
+	  width: 200px;
+	  height: 90px;	 
+      margin-top: 2610px;
+      background-color: #020261;	  
+	 
+}
+
+.main {
+	  padding: 100px 80px; 
+      background-color:black;
+       	   
+}
+
+.contents1 {
+ margin-bottom: 120px;
+}
+
+.contents1 p{
+	  
+	  font-size:14px;
+	  color: white;
+	 
+}
+
+.contents1 h2{
+	   color:  white;
+}
+
+
+ 
