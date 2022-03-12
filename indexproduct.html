@@ -1,0 +1,160 @@
+<html>
+<head>
+<title>Product</title>
+<link rel="stylesheet" href="styleproduks.css">
+</head>
+
+<body>
+     <div class="header">		
+		  	
+         <div class="header-list">
+			 <ul>
+				  <li> <a href ="index.html"> Beranda </li> </a>
+				  <li> <a href ="indexkontak.html"> Kontak </li> </a>
+				  <li> <a href ="product.html"> Produk </li> </a>
+				  <li> <a href ="product.html"> Pesan </li> </a>
+			 </ul>
+         </div>
+    </div>
+  
+    <div class="kolom">
+      <ul class="harga">
+        <li id="ipt_namabarang" class="subhead">PREWEDDING</li>
+        <img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" width="434" height="280">
+		<li id="ipt_hargabarang" class="grey">Rp3.000.000</li>
+        <li class="grey"><button onclick="basic()">Pesan</button></li>
+      </ul>
+    </div>
+    
+    <div class="kolom">
+      <ul class="harga">
+        <li id="ipt_namabarang" class="subhead" style="background-color:white">TRIP GUIDE</li>       
+        <img src="https://images.unsplash.com/photo-1482332486572-10fff1bedfbe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" width="434" height="280">
+		<li id="ipt_hargabarang" class="grey">Rp50.000/Orang</li>
+        <li class="grey"><button onclick="pro()">Pesan</button></li>
+      </ul>
+    </div>
+    
+    <div class="kolom">
+      <ul class="harga">
+        <li id="ipt_namabarang" class="subhead">CAMPING/HIKING</li>
+        <img src="https://images.unsplash.com/photo-1496545672447-f699b503d270?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" width="434" height="280">
+		 <li id="ipt_hargabarang" class="grey">Rp250.000</li>
+        <li class="grey"><button onclick="premium()">Pesan</button></li>
+      </ul>
+    </div>
+ <div class="spasi"></div>
+
+  <div class="contact-form">
+    <table border="0">
+      <tr>
+        <th colspan="2">TOTAL YANG HARUS DIBAYARKAN</th>
+    </tr>
+      <tr>
+        <td align="center">NAMA</td>
+        <td align="center"><input type="text" id="opt_namabarang" disabled></td>
+    </tr>
+    <tr>
+        <td align="center">HARGA</td>
+        <td align="center"><input type="text" id="opt_hargabarang" disabled></td>
+    </tr>
+    <tr>
+        <td align="center">DISKON</td>
+        <td align="center"><input type="text" id="opt_diskon" disabled></td>
+    </tr>
+    <tr>
+        <td align="center">HARGA DISKON</td>
+        <td align="center"><input type="text" id="opt_hargadiskon" disabled></td>
+    </tr>
+    <tr>
+        <td align="center">TOTAL HARGA</td>
+        <td align="center"><input type="text" id="opt_totalharga" disabled></td>
+    </tr>
+    <tr>
+      <td align="center" colspan="2" class="reset"><button onclick="reset()">Reset</button></td>
+  </tr>
+</table>
+</div>
+<script>
+    
+
+var namabarang;
+var hargabarang;
+var diskon;
+var totalharga;
+var hargadiskon;
+
+function basic() {
+    namabarang = document.getElementById("ipt_namabarang").value;
+    hargabarang = parseFloat(document.getElementById("ipt_hargabarang").value);
+    hargabarang = 3000000;
+        diskon = 10;
+        namabarang = "Prewedding";
+    hargadiskon = (hargabarang * 10 / 100);
+    totalharga = (hargabarang) - (hargabarang * 10 / 100);
+    document.getElementById('opt_namabarang').value = namabarang;
+    document.getElementById('opt_hargabarang').value = hargabarang;
+    document.getElementById('opt_hargadiskon').value = hargadiskon;
+    document.getElementById('opt_diskon').value = diskon + "%";
+    document.getElementById('opt_totalharga').value = totalharga;
+}
+
+function pro() {
+    namabarang = document.getElementById("ipt_namabarang").value;
+    hargabarang = parseFloat(document.getElementById("ipt_hargabarang").value);
+    hargabarang = 50000;
+        diskon = 15;
+        namabarang = "Tour Guide";
+    hargadiskon = (hargabarang * 15 / 100);
+    totalharga = (hargabarang) - (hargabarang * 15 / 100);
+    document.getElementById('opt_namabarang').value = namabarang;
+    document.getElementById('opt_hargabarang').value = hargabarang;
+    document.getElementById('opt_hargadiskon').value = hargadiskon;
+    document.getElementById('opt_diskon').value = diskon + "%";
+    document.getElementById('opt_totalharga').value = totalharga;
+}
+
+function premium() {
+    namabarang = document.getElementById("ipt_namabarang").value;
+    hargabarang = parseFloat(document.getElementById("ipt_hargabarang").value);
+    hargabarang = 250000;
+        diskon = 30;
+        namabarang = "Camping/Hiking";
+    hargadiskon = (hargabarang * 15 / 100);
+    totalharga = (hargabarang) - (hargabarang * 15 / 100);
+    document.getElementById('opt_namabarang').value = namabarang;
+    document.getElementById('opt_hargabarang').value = hargabarang;
+    document.getElementById('opt_hargadiskon').value = hargadiskon;
+    document.getElementById('opt_diskon').value = diskon + "%";
+    document.getElementById('opt_totalharga').value = totalharga;
+}
+    function reset(){
+
+        document.getElementById("ipt_namabarang").value = "";
+        document.getElementById("ipt_hargabarang").value = "";
+        document.getElementById("opt_namabarang").value = "";
+        document.getElementById("opt_hargabarang").value = "";
+        document.getElementById("opt_diskon").value ="";
+        document.getElementById("opt_hargadiskon").value = "";
+        document.getElementById("opt_totalharga").value = "";
+    }
+  
+    
+    
+</script>
+
+<div class="footer">
+		  <div class="footer-logo">
+		  <img src="https://drive.google.com/uc?export=view&id=1hI7rNDpdAH8aQGqj5Y7ruWALklOtjYU8"></a>
+		  </div>		
+		 
+		  <div class="footer-list">
+				<ul>
+				  <li> <a href ="index.html"> Beranda </li> </a>
+				  <li> <a href ="indexkontak.html"> Kontak </li> </a>
+				</ul>				
+		  </div>		  
+     </div>
+   
+</body>
+</html>
